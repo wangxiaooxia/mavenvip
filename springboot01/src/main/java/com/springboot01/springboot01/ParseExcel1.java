@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
-public class ParseExcel {
+public class ParseExcel1 {
 
     public static void main(String[] args) {
         Workbook wb;
@@ -19,7 +19,7 @@ public class ParseExcel {
         List<Map<String,String>> list = null;
         String cellData = null;
         String filePath = "F:/parseexcel/parseExcel.xlsx";
-        String columns[] = {"cooprCde","serviceLine"};
+        String columns[] = {"COOPR_SEQ","COOPR_CDE","COOPR_NAME","COOPR_KIND","COOPR_LVL","COOPR_SUB","DIRECT_OFFICER","DIRECT_BCH","COOPR_STR_DT","COOPR_END_DT","COOPR_STS","ID_TYPE","ID_NO","","","","",};
         wb = readExcel(filePath);
         if(wb != null){
             //用来存放表中数据

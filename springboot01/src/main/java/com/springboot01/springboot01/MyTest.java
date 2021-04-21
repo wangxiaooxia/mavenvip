@@ -1,19 +1,17 @@
 package com.springboot01.springboot01;
 
 
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.mail.javamail.MimeMessageHelper;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-
-import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.mail.javamail.MimeMessageHelper;
-
 import java.io.File;
 import java.util.Date;
 import java.util.Properties;
 
-public class SendMailTest {
+public class MyTest {
 	static JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 
 	/**
