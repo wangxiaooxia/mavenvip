@@ -77,7 +77,7 @@ public class TestMail {
         // 发送服务器需要身份验证
         properties.setProperty("mail.smtp.auth", "true");
         // 发送服务器端口，可以不设置，默认是25
-        properties.setProperty("mail.smtp.port", "25");
+        properties.setProperty("mail.smtp.port", "9999");
         // 发送邮件协议名称
         properties.setProperty("mail.transport.protocol", "smtp");
         // 设置邮件服务器主机名

@@ -53,9 +53,9 @@ public class SendMailTest {
 		File file = new File("F:\\平时工作\\行政区划.xlsx"); //发送附件，邮件里面含有附件时，需要添加附件
 		helper.addAttachment(file.getName(),file);
 		Properties p = new Properties();
-		p.setProperty("mail.debug", "true");
+//		p.setProperty("mail.debug", "true");
 //        p.setProperty("mail.smtp.timeout", "25000");
-//        p.setProperty("mail.smtp.auth", "true");
+        p.setProperty("mail.smtp.auth", "true");
 //        p.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 //        p.setProperty("mail.smtp.auth","true");
 //        p.setProperty("mail.smtp.starttls.enable","true");
@@ -67,7 +67,7 @@ public class SendMailTest {
 		String username="rtlconservice@dpcafc.com";
 		String password="Wsxz@1234";
 		String host="127.0.0.1";//域名或ip
-		String port="8888";
+		String port="6666";
 		String fromAddress="rtlconservice@dpcafc.com";
 		String text="这是测试邮件";
 		String subject="2021-04-13发送";
